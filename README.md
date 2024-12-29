@@ -24,10 +24,6 @@ This project is built using **PHP** for backend functionality and **Bootstrap** 
 ### 3. **Responsive Design**
 - Ensures a smooth user experience across devices, including desktops, tablets, and smartphones.
 
-### 4. **Admin Panel**
-- Manage menu items, reservations, and customer orders.
-- View analytics and operational summaries (if implemented).
-
 ---
 
 ## Technologies Used
