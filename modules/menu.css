@@ -1,0 +1,438 @@
+body::before {
+  display: block;
+  content: '';
+  height: 60px;
+}
+
+#navbar {
+  top: 0;
+  width: 100%;
+  transition: top 0.5s;
+  /* Transition effect when sliding down (and up) */
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  font-weight: 900;
+}
+
+.fitimg {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.custombut {
+  width: 120px;
+  height: 30px;
+  padding: auto;
+  background-color: orange;
+  color: black;
+  border: 0px;
+  outline: none;
+  font-size: 15px;
+  margin: 4px;
+  padding: 4px;
+
+  flex-wrap: wrap;
+}
+
+.cbtn1 {
+  width: 80px;
+  height: 30px;
+  padding: auto;
+  background-color: orange;
+  color: black;
+  border: 0px;
+  outline: none;
+  font-size: 15px;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 5%;
+}
+
+.obtn {
+  width: 80px;
+  height: 30px;
+  padding: auto;
+  background-color: orange;
+  color: black;
+  border: 0px;
+  outline: none;
+  font-size: 15px;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 5%;
+}
+
+.cbtn1:hover {
+  font-weight: 900;
+  background-color: white;
+}
+
+.custombut:hover {
+  color: white;
+  background-color: black;
+}
+
+.ative {
+  color: white;
+  background-color: black;
+}
+
+.navbut:hover {
+  font-weight: 800;
+  color: black;
+}
+
+/* CSS for carousel slideshow */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+/* forward & Back buttons */
+.Back,
+.forward {
+  cursor: pointer;
+  position: absolute;
+  top: 48%;
+  width: auto;
+  margin-top: -23px;
+  padding: 17px;
+  color: grey;
+  font-weight: bold;
+  font-size: 19px;
+  transition: 0.4s ease;
+  border-radius: 0 5px 5px 0;
+  user-select: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover,
+.forward:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption Info */
+.Info {
+  color: #e3e3e3;
+  font-size: 16px;
+  padding: 10px 14px;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.enable,
+.dots:hover {
+  background-color: #717161;
+}
+
+
+.logo-image {
+  width: 250px;
+  height: 155px;
+  overflow: hidden;
+  margin-left: 15%;
+  padding-left: 8%;
+  padding-bottom: 10%;
+  padding-top: 0%;
+  margin-top: -3em;
+}
+
+
+.nav>li {
+  display: inline-block;
+  white-space: nowrap;
+}
+
+ul.navbar-nav {
+  display: inline-block;
+}
+
+
+/* from prj ref */
+
+:root {
+  --ora: rgb(237, 39, 21);
+}
+
+*::selection {
+  background: var(--ora);
+  color: #fff;
+}
+
+section {
+  padding: 2rem 9%;
+}
+
+
+.btn1 {
+  display: inline-block;
+  padding: .8rem 3rem;
+  border: .2rem solid var(--ora);
+  color: var(--ora);
+  cursor: pointer;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+  margin-top: 1rem;
+}
+
+.btn1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100%;
+  background: var(--ora);
+  transition: .3s linear;
+  z-index: -1;
+}
+
+.btn1:hover::before {
+  width: 100%;
+  left: 0;
+}
+
+.btn1:hover {
+  color: #fff;
+}
+
+
+.gallery {
+  display: inline-flex;
+  justify-content: space-between;
+}
+
+
+.icon {
+  color: orange;
+  background-color: black;
+  font-size: 30px;
+  outline: none;
+  border: none;
+  padding: 0px 20px;
+  cursor: pointer;
+  margin-top: 10rem;
+  border-radius: 5%;
+}
+
+
+.cover {
+  position: relative;
+  width: 110rem;
+  height: 20%;
+}
+
+.cover::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  z-index: 99;
+  height: 90%;
+  width: 50px;
+  background-image: linear-gradient(90deg, black, transparent);
+}
+
+.cover::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  z-index: 99;
+  height: 90%;
+  width: 50px;
+  background-image: linear-gradient(-90deg, black, transparent);
+}
+
+
+
+.gallery .box-container {
+  display: inline-block;
+  flex-wrap: wrap;
+  gap: 10rem;
+}
+
+.gallery .box-container .box {
+  display: inline-flex;
+  height: 25rem;
+  flex: 0 5 30%;
+  border: 0.1rem solid #0e0e0e;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+  border-radius: .5rem;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.gallery .box-container .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.gallery .box-container .box .content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(254, 254, 253, 0.985);
+  padding: 2rem;
+  padding-top: 5rem;
+  text-align: center;
+  transition: .5s ease;
+}
+
+.gallery .box-container .box .content h3 {
+  font-size: 2.5rem;
+  color: black;
+}
+
+.gallery .box-container .box .content p {
+  font-size: 1.5rem;
+  color: rgb(48, 48, 48);
+  padding: 1rem 0;
+}
+
+.gallery .box-container .box:hover .content {
+  bottom: 0;
+}
+
+div.scrollcat {
+  overflow: auto;
+  white-space: nowrap;
+  scroll-behavior:smooth;
+}
+
+.scrollcat::-webkit-scrollbar {
+  -webkit-appearance: none;
+  scroll-behavior:smooth;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+  -webkit-appearance: none;
+  scroll-behavior:smooth;
+}
+
+
+/* end of prj ref*/
+
+button:hover {
+  cursor: pointer;
+  z-index: 1;
+}
+
+.crdsty {
+  width: 20rem;
+  border-style: solid;
+  border-width: 5px;
+  border-color: rgb(142, 4, 96);
+  height: 40rem;
+}
+
+.container .card button:hover {
+  cursor: pointer;
+}
+
+.cont {
+  position: relative;
+  width: 100%;
+}
+
+.cont img {
+  height: 20rem;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+
+.cont:hover .overlay {
+  bottom: 0;
+  height: 95%;
+  top: 1%;
+}
+
+.text {
+  color: black;
+  font-size: 12px;
+  font-weight: 550;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+  display: inline-block;
+}
+
+#mnu .crd {
+  top: 0%;
+  left: 0%;
+  position: relative;
+  margin: 8px;
+  float: left;
+  width: 20rem;
+  height: 40rem;
+  max-width: 20rem;
+  max-height: 40rem;
+
+}
+
+#mnu .crd .card {
+  float: left;
+  position: absolute;
+  top: 5%;
+  left: 0%;
+  /* max-width: 20rem;
+  max-height: 40rem; */
+  width: 100%;
+  height: 100%;
+}
+
+#mnu {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+#filter {
+  margin-left: 30%;
+}
+
+#filter li {
+  float: left;
+}
